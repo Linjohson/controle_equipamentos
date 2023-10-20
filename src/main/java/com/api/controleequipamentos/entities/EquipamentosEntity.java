@@ -31,6 +31,14 @@ public class EquipamentosEntity {
 	public void setNumeroSerie(String numeroSerie) {
 		this.numeroSerie = numeroSerie;
 	}
+	public Object getProfessor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void setProfessor(Object object) {
+		// TODO Auto-generated method stub
+		
+	}
 	
     
 }
