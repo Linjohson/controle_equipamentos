@@ -1,9 +1,9 @@
 export const defaultTheme = {
     white: '#fff',
-    'primary-color': #163D54,
-    'secondary-color': #CDCDCD,
-    'button-color': #D9D9D9,
-    'button-radius': 10px,
+    'primary-color': '#163D54',
+    'secondary-color': '#CDCDCD',
+    'button-color': '#D9D9D9',
+    'button-radius': '10px',
     'gray-100': '#E1E1E6',
     'gray-300': '#C4C4CC',
     'gray-400': '#8D8D99',
