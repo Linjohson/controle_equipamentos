@@ -1,13 +1,11 @@
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./styles/themes/default";
+import style from '../src/css/Style.module.css';
 
 export function App() {
   return (
-    <><ThemeProvider theme={defaultTheme}>
-      <h1>Fala zé</h1>
-    </ThemeProvider>
-    
-    <article className="row">
+    <ThemeProvider theme={defaultTheme}>
+      <article className="row">
         {/* SideBar */}
         <main className={`p-1 d-flex flex-column flex-grow-1 align-items-center col-lg-2 col-md-3 col-sm-4 col-5 ${style.sideBar}`}>
 
@@ -57,7 +55,7 @@ export function App() {
           </div>
 
         </main>
-      </article></>
-    
+      </article>
+    </ThemeProvider>
   )
 }
