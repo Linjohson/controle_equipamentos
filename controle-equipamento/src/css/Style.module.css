@@ -1,0 +1,9 @@
+@import url('../styles/themes/default.ts');
+@import url('../styles/global.ts');
+.sideBar {
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+body {
+    background-color: var(--secondary-color) !important;
+}
