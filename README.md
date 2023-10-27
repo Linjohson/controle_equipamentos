@@ -2,11 +2,11 @@
 ## :rocket: Introdução ao sistema
 Este trabalho é referente a matéria *PROGRAMAÇÃO ORIENTADA A OBJETOS EM JAVA*, feito em equipe com 4 universitários dos seguintes nomes:
 
-<img src="https://raw.githubusercontent.com/DavidMes17/reposit-images/main/david.jpg" alt="David" width="150" height="150"> DAVID DA SILVA MESQUITA
-<img src="https://raw.githubusercontent.com/DavidMes17/reposit-images/main/Jhony.jpeg" alt="Emerson" width="150" height="150"> JHONY HERBERT CHAGAS RODRIGUES
-<img src="https://raw.githubusercontent.com/DavidMes17/reposit-images/main/Linjhonson.jpeg" alt="Linjhonson" width="150" height="150"> LINJOHSON GUIMARAES DE OLIVEIRA 
-<img src="https://raw.githubusercontent.com/DavidMes17/reposit-images/main/Nicolas.jpeg" alt="Nicolas" width="150" height="150"> NICOLAS ADIR CASTRO BANDEIRA
-<img src="https://raw.githubusercontent.com/DavidMes17/reposit-images/main/Emerson.jpeg" alt="Emerson" width="150" height="150"> EMERSON SÉRGIO CORDEIRO
+<img src="https://raw.githubusercontent.com/DavidMes17/reposit-images/main/david.jpg" alt="David" width="85" height="85"> DAVID DA SILVA MESQUITA
+<img src="https://raw.githubusercontent.com/DavidMes17/reposit-images/main/Jhony.jpeg" alt="Emerson" width="85" height="85"> JHONY HERBERT CHAGAS RODRIGUES
+<img src="https://raw.githubusercontent.com/DavidMes17/reposit-images/main/Linjhonson.jpeg" alt="Linjhonson" width="85" height="85"> LINJOHSON GUIMARAES DE OLIVEIRA 
+<img src="https://raw.githubusercontent.com/DavidMes17/reposit-images/main/Nicolas.jpeg" alt="Nicolas" width="75" height="75"> NICOLAS ADIR CASTRO BANDEIRA
+<img src="https://raw.githubusercontent.com/DavidMes17/reposit-images/main/Emerson.jpeg" alt="Emerson" width="75" height="75"> EMERSON SÉRGIO CORDEIRO
 
 ### :clipboard: Pré-requisitos do sistema
 Antes de conseguir observar o projeto, é necessário ter o *Node JS* instalado, navegador e terminal de sua preferência na sua máquina, e inserir os seguintes comandos no terminal:
