@@ -42,4 +42,4 @@ Sistema feito utilizando as seguintes linguagens:
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## :framed_picture: Front-end do sistema está disponível
-Para acessar, dirija-se até a branch main para obter mais informações
+Para acessar, dirija-se até a branch [main](https://github.com/Linjohson/controle_equipamentos/tree/main) para obter mais informações
