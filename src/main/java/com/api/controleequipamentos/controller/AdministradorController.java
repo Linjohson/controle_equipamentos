@@ -164,57 +164,7 @@ public class AdministradorController {
     
     
   //Alocações
-    @GetMapping("/listarAlocacoes")
-    public List<EquipamentosEntity> listarAlocacoes() {
-        List<EquipamentosEntity> equipamentosAlocados = equipamentosRepository.findByProfessorIsNotNull();
-        return equipamentosAlocados;
-    }
-
     
-    @PostMapping("/alocarEquipamento/{equipamentoId}/{professorId}")
-    public ResponseEntity<?> alocarEquipamentoAProfessor(@PathVariable Long equipamentoId, @PathVariable Long professorId) {
-        Optional<EquipamentosEntity> equipamento = equipamentosRepository.findById(equipamentoId);
-        Optional<ProfessoresEntity> professor = professoresRepository.findById(professorId);
-
-        if (equipamento.isPresent() && professor.isPresent()) {
-            EquipamentosEntity equip = equipamento.get();
-            ProfessoresEntity prof = professor.get();
-
-            // Verificar se o equipamento já está alocado a algum professor
-            if (equip.getProfessor() != null) {
-                return ResponseEntity.badRequest().body("O equipamento já está alocado a outro professor.");
-            }
-
-            // Realizar a alocação do equipamento ao professor
-            equip.setProfessor(prof);
-            equipamentosRepository.save(equip);
-
-            return ResponseEntity.ok("Equipamento alocado com sucesso ao professor " + prof.getNome());
-        } else {
-            return ResponseEntity.notFound().build();
-        }
-    }
-    
-    @DeleteMapping("/excluirAlocacao/{equipamentoId}")
-    public ResponseEntity<?> excluirAlocacao(@PathVariable Long equipamentoId) {
-        Optional<EquipamentosEntity> equipamento = equipamentosRepository.findById(equipamentoId);
-
-        if (equipamento.isPresent()) {
-            EquipamentosEntity equip = equipamento.get();
-
-            // Verificar se o equipamento está alocado a algum professor
-            if (equip.getProfessor() != null) {
-                // Realizar a desalocação do equipamento
-                equip.setProfessor(null);
-                equipamentosRepository.save(equip);
-                return ResponseEntity.ok("Alocação do equipamento excluída com sucesso.");
-            } else {
-                return ResponseEntity.badRequest().body("O equipamento não está alocado a nenhum professor.");
-            }
-        } else {
-            return ResponseEntity.notFound().build();
-        }
-    }
 
 }
 

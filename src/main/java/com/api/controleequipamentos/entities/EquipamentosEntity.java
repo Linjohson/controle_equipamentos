@@ -12,6 +12,7 @@ public class EquipamentosEntity {
     private Long id;
     private String nome;
     private String numeroSerie;
+    private String professor;
     // Outros campos e métodos getters e setters
 	public Long getId() {
 		return id;
@@ -31,12 +32,11 @@ public class EquipamentosEntity {
 	public void setNumeroSerie(String numeroSerie) {
 		this.numeroSerie = numeroSerie;
 	}
-	public Object getProfessor() {
-		// TODO Auto-generated method stub
-		return null;
+	public String getProfessor() {
+		return professor;
 	}
-	public void setProfessor(Object object) {
-		// TODO Auto-generated method stub
+	public void setProfessor(String professor) {
+		this.professor = professor;
 		
 	}
 	
