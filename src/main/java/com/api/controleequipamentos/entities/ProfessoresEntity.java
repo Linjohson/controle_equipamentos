@@ -13,7 +13,10 @@ public class ProfessoresEntity {
     private Long id;
     private String nome;
     private String matricula;
-
+    
+	/*
+	 * private String professor;
+	 */
     // Getters e setters
 	public Long getId() {
 		return id;
@@ -33,6 +36,10 @@ public class ProfessoresEntity {
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
 	}
+	/*
+	 * public String getProfessores() { return professor; } public void
+	 * setProfessores(String professores) { this.professor = professores; }
+	 */
 
     
     // Construtores

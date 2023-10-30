@@ -12,8 +12,10 @@ public class EquipamentosEntity {
     private Long id;
     private String nome;
     private String numeroSerie;
-    private String professor;
-    // Outros campos e métodos getters e setters
+
+	/*
+	 * private String professor;
+	 */    // Outros campos e métodos getters e setters
 	public Long getId() {
 		return id;
 	}
@@ -32,13 +34,12 @@ public class EquipamentosEntity {
 	public void setNumeroSerie(String numeroSerie) {
 		this.numeroSerie = numeroSerie;
 	}
-	public String getProfessor() {
-		return professor;
-	}
-	public void setProfessor(String professor) {
-		this.professor = professor;
-		
-	}
+	/*
+	 * public String getProfessor() { return professor; } public void
+	 * setProfessor(String professor) { this.professor = professor;
+	 * 
+	 * }
+	 */
 	
     
 }

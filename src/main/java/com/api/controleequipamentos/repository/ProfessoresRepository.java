@@ -10,7 +10,7 @@ import java.util.Optional;
 public interface ProfessoresRepository extends JpaRepository<ProfessoresEntity, Long> {
 
     List<ProfessoresEntity> findAll(); // Método existente
-
+    
     Optional<ProfessoresEntity> findByMatricula(String matricula); // Novo método para verificar a matrícula
 }
 

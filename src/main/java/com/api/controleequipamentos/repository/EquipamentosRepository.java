@@ -15,7 +15,6 @@ public interface EquipamentosRepository extends JpaRepository<EquipamentosEntity
     Optional<EquipamentosEntity> findByNome(String nome); // Novo método para verificar o nome
     Optional<EquipamentosEntity> findByNumeroSerie(String nome); // Novo método para verificar o nome
 
-	List<EquipamentosEntity> findByProfessorIsNotNull();
 
 }
 
