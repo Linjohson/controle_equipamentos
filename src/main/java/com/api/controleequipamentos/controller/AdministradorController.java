@@ -5,10 +5,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import com.api.controleequipamentos.entities.ProfessoresEntity;
+import com.api.controleequipamentos.entities.ReservaEntity;
 import com.api.controleequipamentos.entities.EquipamentosEntity;
 import com.api.controleequipamentos.repository.ProfessoresRepository;
+import com.api.controleequipamentos.repository.ReservaRepository;
 import com.api.controleequipamentos.repository.EquipamentosRepository;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,12 +20,15 @@ import java.util.Optional;
 public class AdministradorController {
 	
     private final ProfessoresRepository professoresRepository;
+    private final ReservaRepository reservaRepository;
 
 	@Autowired
     private EquipamentosRepository equipamentosRepository;
-	public AdministradorController(ProfessoresRepository professoresRepository) {
+	public AdministradorController(ProfessoresRepository professoresRepository, ReservaRepository reservaRepository) {
         this.professoresRepository = professoresRepository;
+        this.reservaRepository = reservaRepository;
     }
+    
 	
 
     // Listar todos os equipamentos
@@ -163,8 +169,29 @@ public class AdministradorController {
     }
     
     
-  //Alocações
-    
+ // Adicionar uma reserva
+    @PostMapping("/adicionarReserva")
+    public ResponseEntity<?> adicionarReserva(@RequestBody ReservaEntity reserva) {
+        // Verifique se o equipamento e o professor existem
+        Optional<EquipamentosEntity> existingEquipamento = equipamentosRepository.findById(reserva.getEquipamento().getId());
+        Optional<ProfessoresEntity> existingProfessor = professoresRepository.findById(reserva.getProfessor().getId());
+
+        if (existingEquipamento.isPresent() && existingProfessor.isPresent()) {
+            // Aqui você pode realizar qualquer validação adicional necessária
+            // e salvar a reserva
+            ReservaEntity savedReserva = reservaRepository.save(reserva);
+            return ResponseEntity.ok(savedReserva);
+        } else {
+            return ResponseEntity.badRequest().body("Equipamento ou professor não encontrado.");
+        }
+    }
+
+    // Listar todas as reservas
+    @GetMapping("/listarReservas")
+    public List<ReservaEntity> listarReservas() {
+        return reservaRepository.findAllByOrderByDataReservaAsc();
+    }
+
 
 }
 

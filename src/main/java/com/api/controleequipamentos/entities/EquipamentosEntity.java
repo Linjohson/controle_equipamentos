@@ -34,12 +34,7 @@ public class EquipamentosEntity {
 	public void setNumeroSerie(String numeroSerie) {
 		this.numeroSerie = numeroSerie;
 	}
-	/*
-	 * public String getProfessor() { return professor; } public void
-	 * setProfessor(String professor) { this.professor = professor;
-	 * 
-	 * }
-	 */
+	
 	
     
 }
