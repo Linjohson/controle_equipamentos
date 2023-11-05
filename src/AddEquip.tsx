@@ -9,7 +9,7 @@ export function AddEquip(){
         	<p className="text fs-3 m-0">
               <div de cadastrar equipamento></div>
 		<head>
-		<div clss="table">
+		<div class="table">
 			<table>
 				<thead>
 					<tr>
