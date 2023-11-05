@@ -8,6 +8,19 @@ export function AddLoc(){
         <div className="alterar m-1 col-lg-10 col-md-9 col-sm-8">
             <p className="text fs-3 m-0">
               div de agendar locação
+	<head>
+		<div class="table">
+			<table>
+				<thead>
+					<tr>
+						<th>Sala Disponível</th>
+						<th>Horários Disponíveis</th>
+						
+					</tr>
+				</thead>
+			</table>
+		</div>
+	</head>
             </p>
         </div>
 
